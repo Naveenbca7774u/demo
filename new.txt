@@ -1,2 +1,2 @@
-this is first time trying
-this is secong line
+this is the first time trying
+this is the second line
