@@ -1,2 +1,19 @@
-this is the first time trying
-this is the second line
+pipeline {
+    agent any
+    
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo "Compiling Hello World program..."'
+            }
+        }
+        
+        stage('Run') {
+            steps {
+                sh 'echo "Running Hello World program..."'
+                sh 'javac HelloWorld.java'
+                sh 'java HelloWorld'
+            }
+        }
+    }
+}
